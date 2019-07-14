@@ -1,6 +1,7 @@
 package com.stackroute.demo;
 
-public class Movie {
+public class Movie
+{
     //Actor objects
     private Actor actor1;
     private Actor actor2;

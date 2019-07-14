@@ -5,7 +5,8 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class MovieConfig {
-//movie bean in which the actor object beans are passed
+
+    //movie bean in which the actor object beans are passed
     @Bean
     @Scope("prototype")
     public Movie getMovie()
