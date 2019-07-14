@@ -11,25 +11,44 @@ public class MovieConfig {
     @Scope("prototype")
     public Movie getMovie()
     {
-    return new Movie(actor1(),actor2(),actor3());
+        Movie m =new Movie();
+        m.setActor1(actor1());
+        m.setActor2(actor2());
+        m.setActor3(actor3());
+        return m;
     }
 
+    //bean in which the details of actor1 is given
     @Bean
     public Actor actor1()
     {
-    return new Actor("Ranveer","Male",34);
+        Actor actor=new Actor();
+        actor.setName("Ranveer");
+        actor.setGender("male");
+        actor.setAge(23);
+    return actor;
     }
 
+    //bean in which the details of actor2 is given
     @Bean
     public Actor actor2()
     {
-        return new Actor("Deepika","Female",32);
+        Actor actor=new Actor();
+        actor.setName("Deepika");
+        actor.setGender("female");
+        actor.setAge(32);
+        return actor;
     }
 
+    //bean in which the details of actor3 is given
     @Bean
     public Actor actor3()
     {
-        return new Actor("Ranbir","Male",35);
+        Actor actor=new Actor();
+        actor.setName("Ranbir");
+        actor.setGender("male");
+        actor.setAge(35);
+        return actor;
     }
 
 

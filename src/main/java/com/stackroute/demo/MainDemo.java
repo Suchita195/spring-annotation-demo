@@ -11,8 +11,5 @@ public class MainDemo
         ApplicationContext context= new AnnotationConfigApplicationContext(MovieConfig.class);
         Movie movie1=context.getBean("getMovie",Movie.class);
         movie1.display();
-        Movie movie2=context.getBean("getMovie",Movie.class);
-        movie2.display();
-        System.out.println(movie1==movie2);
     }
 }

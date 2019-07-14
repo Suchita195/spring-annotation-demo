@@ -9,27 +9,22 @@ public class Actor {
     private String gender;
     private int age;
 
-    //constructor
-    public Actor(String name, String gender, int age)
-    {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-    }
-
-    //setters
+    //setter for name
     public void setName(String name) {
         this.name = name;
     }
 
+    //setter for gender
     public void setGender(String gender) {
         this.gender = gender;
     }
 
+    //setter for age
     public void setAge(int age) {
         this.age = age;
     }
 
+    //method that prints the details of the actors
     public void print()
     {
         System.out.println("Name is "+ name +"\n"+ "Gender is " + gender + "\n"+ "Age is " +age);
