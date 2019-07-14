@@ -1,7 +1,5 @@
 package com.stackroute.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Actor {
 
     //properties
