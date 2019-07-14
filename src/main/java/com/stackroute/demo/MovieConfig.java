@@ -11,11 +11,7 @@ public class MovieConfig {
     @Scope("prototype")
     public Movie getMovie()
     {
-        Movie m =new Movie();
-        m.setActor1(actor1());
-        m.setActor2(actor2());
-        m.setActor3(actor3());
-        return m;
+        return new Movie();
     }
 
     //bean in which the details of actor1 is given

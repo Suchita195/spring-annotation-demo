@@ -23,7 +23,6 @@ public class Actor {
     public void setAge(int age) {
         this.age = age;
     }
-
     //method that prints the details of the actors
     public void print()
     {

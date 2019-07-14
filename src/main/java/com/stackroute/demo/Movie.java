@@ -12,13 +12,15 @@ public class Movie
     private Actor actor3;
 
     //setters
+    @Autowired
     public void setActor1(Actor actor1) {
         this.actor1 = actor1;
     }
-
+    @Autowired
     public void setActor2(Actor actor2) {
         this.actor2 = actor2;
     }
+    @Autowired
     public void setActor3(Actor actor3) {
         this.actor3 = actor3;
     }
