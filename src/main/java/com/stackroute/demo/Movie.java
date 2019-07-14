@@ -32,5 +32,4 @@ public class Movie
           actor1.print();
           actor2.print();
           actor3.print();
-    }
-}
+    }}

@@ -10,6 +10,7 @@ public class MainDemo
         //Application Context
         ApplicationContext context= new AnnotationConfigApplicationContext(MovieConfig.class);
         Movie movie1=context.getBean("getMovie",Movie.class);
-        movie1.display(); 
+        movie1.display();
     }
 }
+
