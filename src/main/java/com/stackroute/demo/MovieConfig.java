@@ -1,8 +1,6 @@
 package com.stackroute.demo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
-
 @Configuration
 public class MovieConfig {
     //Bean for the lifecycle
@@ -10,5 +8,12 @@ public class MovieConfig {
     public BeanLifecycleDemo getLifecycle()
     {
         return new BeanLifecycleDemo();
+    }
+
+    //Bean for the PostProcessor
+    @Bean
+    public BeanPostProcessorDemoBean beanPostProcessorDemoBean()
+    {
+        return new BeanPostProcessorDemoBean();
     }
 }
