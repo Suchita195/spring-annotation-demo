@@ -9,10 +9,7 @@ An Actor can be initialized with the three properties via the corresponding sett
 property based injection in the bean definition file (beans.xml)
 Movie “has a” Actor that can be initialized via the corresponding setter method. Use property
 based object injection in the bean definition file (beans.xml)
-The Main class looks up Movie bean via three ways to print out actor information:
-1. Using XmlBeanFactory
-2. Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader
-3. Using ApplicationContext
+The Main class looks up Movie bean via three ways to print out actor information:Using ApplicationContext
 Create a spring-xml-demo repo and push the code to master branch.
 
 Task 2:
@@ -32,14 +29,12 @@ System.out.println(beanA==beanB);
 Change the scope of the Movie bean in beans.xml to prototype and run the application again.
 Note the output.
 Replace id of the Movie bean with name having two values, like this:
-
 <bean name=”MovieA, MovieB” ........>
 Update the code in Main to get the Movie bean by its two different name.
 Push the code to constructor-injection branch.
 
 Task 3:
-From the constructor-injection branch of spring-xml-demo repo create a
-autowire-xml branch.
+From the constructor-injection branch of spring-xml-demo repo create a autowire-xml branch.
 For the Movie bean, delete the constructor based object injection in the bean definition file
 (beans.xml) that injects an Actor bean.
 Use autowire byName in the Movie bean to inject an Actor bean.
@@ -76,7 +71,6 @@ Task 6:
 
 From the bean-lifecycle branch of spring-xml-demo repo create a bean-post-
 processor branch.
-
 Add a BeanPostProcessorDemoBean class in com.stackroute.demo that implements
 BeanPostProcessor
 Override the required methods to print out messages.
